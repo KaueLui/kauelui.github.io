@@ -3,27 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauê Luí - Github.io</title>
+    <title>Kauê Luí - Portfolio</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
+            min-height: 100vh;
+            background: #fff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
+            padding: 20px;
         }
-        img {
-            max-width: 90%;
-            max-height: 90%;
-            border: 5px solid #d9a762;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        .container {
+            max-width: 400px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #5DCB6A;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .card {
+            margin: 10px 0;
+            padding: 15px;
+            background: linear-gradient(45deg, #5DCB6A, #4FAF5A); /* Gradiente das cores solicitadas */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 24px;
+            margin-right: 10px;
+            filter: brightness(0) invert(1); /* Ícones brancos para contraste com o gradiente */
+        }
+        .card a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+        @media (max-width: 480px) {
+            .container {
+                max-width: 300px;
+            }
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="https://media.tenor.com/VjDP2psp13sAAAAM/cachorrinho-doguinho.gif" alt="Meme do Cachorro Caramelo">
+    <div class="container">
+        <img class="profile-img" src="https://media.discordapp.net/attachments/843600174361083974/1342118772466520094/61c2303e07efddc6d031fc83f87a6c52-removebg-preview_1.png?ex=67b87902&is=67b72782&hm=7629fe25a261dd31f49a3ea7b43ea59aaf5776065e850be460633407c684b359&=&format=webp&quality=lossless" alt="Perfil">
+        <h1>Kauê Luí</h1>
+        <h2>Front-end Dev | Graphic Design<br>Igarassu, Pernambuco, Brazil</h2>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            <a href="https://x.com/kaueludev" target="_blank">Twitter (@kaueludev)</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            <a href="https://www.instagram.com/kuelui" target="_blank">Instagram (@kuelui)</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968708.png" alt="Bento">
+            <a href="https://bento.me/kauelui" target="_blank">Bento.me</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            <a href="https://github.com/KaueLui" target="_blank">GitHub (Kauê Luí)</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/kauelui" target="_blank">LinkedIn (@kauelui)</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            <a href="https://x.com/vaLLLorant" target="_blank">vaLLLorant</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            <a href="https://github.com/Timeless-inc" target="_blank">Timeless</a>
+        </div>
+    </div>
 </body>
 </html>
